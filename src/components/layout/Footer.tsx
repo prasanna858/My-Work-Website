@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
-import { Instagram, Linkedin, Youtube, Mail, Phone } from "lucide-react";
+import {
+  Instagram,
+  Linkedin,
+  Youtube,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 const socialLinks = [
   {
     icon: Instagram,
@@ -68,8 +75,8 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-primary-foreground/80 text-sm leading-relaxed">
-              Crafting stunning menu designs, thumbnails, and visual content
-              that makes hungry customers stop and engage.
+              Crafting stunning menu designs, Youtube and Instagram thumbnails,
+              and visual content that makes hungry customers stop and engage.
             </p>
             <div className="flex gap-3 mt-6">
               {socialLinks.map((social) => (
@@ -134,11 +141,18 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:+917780142362"
-                  className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  href="https://wa.me/917780142362?text=I%20want%20to%20talk%20with%20you%20regarding%20your%20work."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-3 rounded-2xl hover:bg-secondary cursor-pointer transition"
                 >
-                  <Phone size={16} />
-                  +91 77801 42362
+                  <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-secondary-foreground" />
+                  </div>
+
+                  <div>
+                    <p className="font-medium">+91 7780142362</p>
+                  </div>
                 </a>
               </li>
             </ul>
