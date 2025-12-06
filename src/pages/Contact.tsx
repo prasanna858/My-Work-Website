@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { MessageCircle } from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -293,7 +294,7 @@ const Contact = () => {
                     className="flex items-center gap-4 p-3 rounded-2xl hover:bg-secondary cursor-pointer transition"
                   >
                     <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
-                      <MapPin className="w-5 h-5 text-secondary-foreground" />
+                      <MessageCircle className="w-5 h-5 text-secondary-foreground" />
                     </div>
 
                     <div>
@@ -301,7 +302,6 @@ const Contact = () => {
                       <p className="font-medium">+91 7780142362</p>
                     </div>
                   </a>
-
                   <div className="flex items-center gap-4 p-3 rounded-2xl">
                     <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
                       <MapPin className="w-5 h-5 text-secondary-foreground" />

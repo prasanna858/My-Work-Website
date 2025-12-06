@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { MessageCircle } from "lucide-react";
 import {
   Instagram,
   Linkedin,
@@ -133,9 +134,9 @@ export function Footer() {
               <li>
                 <a
                   href="mailto:sridhanvisuals@gmail.com"
-                  className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                  className="flex items-center gap-4 text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  <Mail size={16} />
+                  <Mail size={35} />
                   sridhanvisuals@gmail.com
                 </a>
               </li>
@@ -144,10 +145,10 @@ export function Footer() {
                   href="https://wa.me/917780142362?text=I%20want%20to%20talk%20with%20you%20regarding%20your%20work."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-3 rounded-2xl hover:bg-secondary cursor-pointer transition"
+                  className="flex items-center gap-4 p-3 rounded-2xl cursor-pointer transition"
                 >
                   <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-secondary-foreground" />
+                    <MessageCircle className="w-5 h-5 text-secondary-foreground" />
                   </div>
 
                   <div>
