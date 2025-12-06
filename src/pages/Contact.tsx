@@ -105,14 +105,18 @@ export default function Contact() {
                   Want to schedule a call?
                 </p>
 
-                <Button variant="accent" className="rounded-2xl" asChild>
+                <Button
+                  variant="outline"
+                  className="w-full rounded-2xl border-primary-foreground/30 bg-transparent hover:bg-transparent"
+                  asChild
+                >
                   <a
-                    href="https://calendly.com"
+                    href="https://wa.me/917780142362?text=Hello%2C%20I%20want%20to%20book%20a%20call%20regarding%20my%20project."
                     target="_blank"
-                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 text-primary-foreground"
                   >
-                    <Calendar size={18} />
-                    Book a Free Call
+                    <Calendar size={18} className="text-primary-foreground" />
+                    <span className="text-primary-foreground">Book a Call</span>
                   </a>
                 </Button>
               </div>
