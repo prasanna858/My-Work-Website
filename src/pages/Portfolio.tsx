@@ -6,16 +6,17 @@ import { Footer } from "@/components/layout/Footer";
 import { MobileContactFAB } from "@/components/ui/MobileContactFAB";
 import { ExternalLink } from "lucide-react";
 
-const categories = ["All", "Menu", "Thumbnails", "Reels", "Brand Kit"];
+export const categories = ["All", "Menu", "Thumbnails", "Reels", "Brand Kit"];
 
-const projects = [
+// ⭐ EXPORT THIS so PortfolioDetail can import it
+export const projects = [
   {
     id: 1,
     title: "Spice Garden Menu",
     category: "Menu",
     image: "/project-1.jpg",
     description: "Complete menu redesign for Indian restaurant",
-    images: [], // No extra images
+    images: [],
   },
 
   {
@@ -27,7 +28,6 @@ const projects = [
 
     description: "30 custom thumbnails for food channel",
 
-    // ⭐ This project has multiple images
     images: [
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765126737/WhatsApp_Image_2025-11-27_at_00.27.18_aa16d83f_kvvc0u.jpg",
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765126680/main-sample.png",
@@ -104,7 +104,6 @@ const Portfolio = () => {
 
       <main className="pt-32 pb-24">
         <div className="container">
-          {/* Page Header */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -120,7 +119,7 @@ const Portfolio = () => {
             </p>
           </motion.div>
 
-          {/* Filter Tabs */}
+          {/* FILTER BUTTONS */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -142,7 +141,7 @@ const Portfolio = () => {
             ))}
           </motion.div>
 
-          {/* Portfolio Grid */}
+          {/* PROJECT GRID */}
           <motion.div
             layout
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
@@ -157,7 +156,6 @@ const Portfolio = () => {
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
                   className="floating-card"
-                  style={{ animationDelay: `${index * 0.3}s` }}
                 >
                   <Link
                     to={`/portfolio/${project.id}`}
@@ -167,36 +165,21 @@ const Portfolio = () => {
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      loading="lazy"
                     />
 
-                    {/* Hover overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                    {/* Content */}
-                    <div className="absolute inset-x-0 bottom-0 p-5 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                      <span className="inline-block px-3 py-1 rounded-full bg-accent/90 text-accent-foreground text-xs font-medium mb-2">
+                    {/* OVERLAY CONTENT */}
+                    <div className="absolute inset-x-0 bottom-0 p-5">
+                      <span className="inline-block px-3 py-1 rounded-full bg-accent text-accent-foreground text-xs font-medium mb-2">
                         {project.category}
                       </span>
-                      <h3 className="text-lg font-display font-semibold text-primary-foreground">
+                      <h3 className="text-lg font-display font-semibold text-white">
                         {project.title}
                       </h3>
-                      <p className="text-sm text-primary-foreground/80 mt-1">
-                        {project.description}
-                      </p>
                     </div>
 
-                    {/* Corner icon */}
-                    <div className="absolute top-4 right-4 p-2 rounded-full bg-card/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <ExternalLink
-                        size={16}
-                        className="text-primary-foreground"
-                      />
-                    </div>
-
-                    {/* Badge - visible by default */}
-                    <div className="absolute bottom-4 left-4 px-3 py-1.5 rounded-full bg-card/90 backdrop-blur-sm text-xs font-medium group-hover:opacity-0 transition-opacity duration-300">
-                      {project.category}
+                    {/* ICON */}
+                    <div className="absolute top-4 right-4 p-2 rounded-full bg-black/40 backdrop-blur-sm">
+                      <ExternalLink size={16} className="text-white" />
                     </div>
                   </Link>
                 </motion.div>

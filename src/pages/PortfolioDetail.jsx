@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { projects } from "./Portfolio"; // Adjust path if needed
+import { projects } from "./Portfolio";
 
 const PortfolioDetail = () => {
   const { id } = useParams();
@@ -26,15 +26,14 @@ const PortfolioDetail = () => {
         <h1 className="text-4xl font-display font-bold">{project.title}</h1>
         <p className="text-muted-foreground mt-2">{project.description}</p>
 
-        {/* ⭐ Show all images */}
+        {/* IMAGE GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-          {project.images && project.images.length > 0 ? (
+          {project.images.length > 0 ? (
             project.images.map((img, index) => (
               <img
                 key={index}
                 src={img}
-                alt={`${project.title}-${index}`}
-                className="rounded-2xl shadow-lg w-full object-cover"
+                className="rounded-xl shadow-md w-full object-cover"
               />
             ))
           ) : (
