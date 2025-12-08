@@ -6,27 +6,36 @@ import { Button } from "@/components/ui/button";
 const featuredProjects = [
   {
     id: 1,
-    title: "Spice Garden Menu",
+    title: "Menu Cards",
     category: "Menu Design",
     image: "/project-1.jpg",
-    stats: { increase: "*", metric: "order value increase" },
+    stats: { increase: "🥰", metric: "order value increase" },
     color: "from-primary/80 to-primary",
   },
   {
     id: 2,
-    title: "TasteBuds YouTube",
+    title: "Tech YouTube",
     category: "Thumbnails",
-    image: "/project-2.jpg",
-    stats: { increase: "*", metric: "views in 30 days" },
+    image:
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765172338/Youtube_Thumb_hdj3yx.png",
+    stats: { increase: "😍", metric: "views" },
     color: "from-accent/80 to-accent",
   },
   {
     id: 3,
-    title: "Fresh Bites Reels",
-    category: "Social Reels",
+    title: "Instagram Reels",
+    category: "SocialMedia Reels",
     image: "/project-3.jpg",
-    stats: { increase: "*", metric: "engagement rate" },
+    stats: { increase: "💞📈", metric: "engagement rate" },
     color: "from-primary/80 to-accent/80",
+  },
+  {
+    id: 4,
+    title: "Curry House Branding",
+    category: "Brand Kit",
+    image: "/project-4.jpg",
+    stats: { increase: "🔥", metric: "brand identity" },
+    color: "from-accent/80 to-primary/80",
   },
 ];
 

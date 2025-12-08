@@ -33,6 +33,7 @@ export const projects = [
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765170877/AI_5_Tools_wc7lsm.png",
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765170881/Slight_AI_5_zoeyhh.png",
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765171567/Data_An_2026_idzhwz.png",
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765176334/4K_xofr4k.png",
     ],
   },
 
