@@ -21,17 +21,18 @@ export const projects = [
 
   {
     id: 2,
-    title: "TasteBuds YouTube",
+    title: "Tech YouTube",
     category: "Thumbnails",
     image:
-      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765126737/WhatsApp_Image_2025-11-27_at_00.27.18_aa16d83f_kvvc0u.jpg",
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765172338/Youtube_Thumb_hdj3yx.png",
 
-    description: "30 custom thumbnails for food channel",
+    description: "10 custom thumbnails for tech channel",
 
     images: [
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765126737/WhatsApp_Image_2025-11-27_at_00.27.18_aa16d83f_kvvc0u.jpg",
-      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765126680/main-sample.png",
-      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765126679/cld-sample-5.jpg",
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765170877/AI_5_Tools_wc7lsm.png",
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765170881/Slight_AI_5_zoeyhh.png",
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765171567/Data_An_2026_idzhwz.png",
     ],
   },
 
