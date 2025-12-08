@@ -34,6 +34,9 @@ export const projects = [
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765170881/Slight_AI_5_zoeyhh.png",
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765171567/Data_An_2026_idzhwz.png",
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765176334/4K_xofr4k.png",
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765187620/PortFolio_ozasdu.png",
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765190771/Thumbnails_g0yj02.png",
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765194906/phones_lap_f0rvr6.png",
     ],
   },
 
