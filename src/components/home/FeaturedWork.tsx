@@ -8,7 +8,8 @@ const featuredProjects = [
     id: 1,
     title: "Menu Cards",
     category: "Menu Design",
-    image: "/project-1.jpg",
+    image:
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765215898/Rest_Menu_Cards_bqfiuq.png",
     stats: { increase: "🥰", metric: "order value increase" },
     color: "from-primary/80 to-primary",
   },
@@ -25,15 +26,17 @@ const featuredProjects = [
     id: 3,
     title: "Instagram Reels",
     category: "SocialMedia Reels",
-    image: "/project-3.jpg",
+    image:
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765220726/Insta_Reels_ire4oy.png",
     stats: { increase: "💞📈", metric: "engagement rate" },
     color: "from-primary/80 to-accent/80",
   },
   {
     id: 4,
-    title: "Curry House Branding",
+    title: "Branding Kit",
     category: "Brand Kit",
-    image: "/project-4.jpg",
+    image:
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765221295/Brand_Kit_bq1bvc.png",
     stats: { increase: "🔥", metric: "brand identity" },
     color: "from-accent/80 to-primary/80",
   },
