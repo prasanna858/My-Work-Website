@@ -37,6 +37,8 @@ export const projects = [
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765187620/PortFolio_ozasdu.png",
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765190771/Thumbnails_g0yj02.png",
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765194906/phones_lap_f0rvr6.png",
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765197857/in_30_days_vmpwrb.png",
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765198540/Cartoon_b4azlb.png",
     ],
   },
 
