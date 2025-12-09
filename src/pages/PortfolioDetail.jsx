@@ -9,7 +9,6 @@ import { X } from "lucide-react";
 const PortfolioDetail = () => {
   const { id } = useParams();
   const project = projects.find((p) => p.id === Number(id));
-
   const [activeImage, setActiveImage] = useState(null);
 
   if (!project) {
@@ -29,16 +28,28 @@ const PortfolioDetail = () => {
           to="/portfolio"
           className="text-primary underline mb-6 inline-block"
         >
-          👈⬅️ Back to My Work Buddy🥰
+          👈⬅️ Back My Hard work Buddy🥰💞
         </Link>
 
         <h1 className="text-4xl font-display font-bold">{project.title}</h1>
         <p className="text-muted-foreground mt-2">{project.description}</p>
 
-        {/* IMAGE GRID */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-          {project.images.length > 0 ? (
-            project.images.map((img, index) => (
+        {/* ✅ PDF SECTION */}
+        {project.pdf && (
+          <div className="mt-10 w-full h-[80vh] rounded-xl overflow-hidden border">
+            <iframe
+              src={project.pdf}
+              className="w-full h-full"
+              allow="autoplay"
+              title="Project PDF"
+            ></iframe>
+          </div>
+        )}
+
+        {/* ✅ IMAGE SECTION */}
+        {project.images.length > 0 && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            {project.images.map((img, index) => (
               <motion.img
                 key={index}
                 src={img}
@@ -47,11 +58,9 @@ const PortfolioDetail = () => {
                 onClick={() => setActiveImage(img)}
                 className="cursor-pointer rounded-xl shadow-md w-full object-cover"
               />
-            ))
-          ) : (
-            <p>No additional images.</p>
-          )}
-        </div>
+            ))}
+          </div>
+        )}
       </main>
 
       <Footer />
@@ -68,19 +77,15 @@ const PortfolioDetail = () => {
           >
             <motion.img
               src={activeImage}
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.8 }}
-              transition={{ duration: 0.25 }}
-              className="max-w-full max-h-[90vh] rounded-xl shadow-2xl"
+              className="max-w-full max-h-[90vh] rounded-xl"
               onClick={(e) => e.stopPropagation()}
             />
 
             <button
               onClick={() => setActiveImage(null)}
-              className="absolute top-6 right-6 bg-white/90 rounded-full p-2"
+              className="absolute top-6 right-6 bg-white rounded-full p-2"
             >
-              <X size={24} />
+              <X />
             </button>
           </motion.div>
         )}

@@ -12,13 +12,15 @@ export const categories = ["All", "Menu", "Thumbnails", "Reels", "Brand Kit"];
 export const projects = [
   {
     id: 1,
-    title: "Restaurant Menu",
+    title: "Restaurant Menu Card",
     category: "Menu",
-    image: "/project-1.jpg",
+    image:
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765215898/Rest_Menu_Cards_bqfiuq.png",
     description: "Complete menu redesign for Indian restaurant",
     images: [
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765208378/Biryani_Menu_qhwbhu.png",
     ],
+    pdf: "https://drive.google.com/file/d/1aMRXvDV9kpmHO6pJZ1LSThp-mmxQ1ANA/preview",
     visible: true,
   },
 
@@ -46,21 +48,25 @@ export const projects = [
 
   {
     id: 3,
-    title: "Fresh Bites Reels",
+    title: "Brand Promote Reels",
     category: "Reels",
-    image: "/project-3.jpg",
+    image:
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765220726/Insta_Reels_ire4oy.png",
     description: "Instagram reels series for cafe",
     images: [],
+    pdf: "",
     visible: true,
   },
 
   {
     id: 4,
-    title: "Curry House Branding",
+    title: "Brand Kit",
     category: "Brand Kit",
-    image: "/project-4.jpg",
+    image:
+      "https://res.cloudinary.com/dbodkubbk/image/upload/v1765221295/Brand_Kit_bq1bvc.png",
     description: "Complete brand identity package",
     images: [],
+    pdf: "",
     visible: true,
   },
 
