@@ -184,7 +184,7 @@ export function Hero() {
               duration: 0.7,
               delay: 0.2,
             }}
-            className="relative hidden lg:block"
+            className="relative block"
           >
             <div className="relative">
               {/* Main image placeholder - will be generated */}
