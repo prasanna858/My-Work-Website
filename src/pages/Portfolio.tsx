@@ -66,7 +66,7 @@ export const projects = [
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765221295/Brand_Kit_bq1bvc.png",
     description: "Complete brand identity package",
     images: [],
-    pdf: "",
+    pdf: "https://drive.google.com/file/d/1Jq5pPd4jmj-wOrI_q8zQte8BCiVabtmi/preview",
     visible: true,
   },
 
