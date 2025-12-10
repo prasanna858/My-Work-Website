@@ -71,7 +71,7 @@ export const projects = [
     description: "Complete brand identity package",
     images: [],
     video: "",
-    pdf: "https://drive.google.com/file/d/1Jq5pPd4jmj-wOrI_q8zQte8BCiVabtmi/preview",
+    pdf: "https://drive.google.com/file/d/11Zo5gZ_HxvJTBvbx-w2mEmAwgs_taZEw/preview",
     visible: true,
   },
 
