@@ -17,6 +17,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765215898/Rest_Menu_Cards_bqfiuq.png",
     description: "Complete menu redesign for Indian restaurant",
+    video: "",
     images: [
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765208378/Biryani_Menu_qhwbhu.png",
     ],
@@ -31,6 +32,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765172338/Youtube_Thumb_hdj3yx.png",
     description: "10 custom thumbnails for tech channel",
+    video: "",
     images: [
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765126737/WhatsApp_Image_2025-11-27_at_00.27.18_aa16d83f_kvvc0u.jpg",
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765170877/AI_5_Tools_wc7lsm.png",
@@ -54,6 +56,8 @@ export const projects = [
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765220726/Insta_Reels_ire4oy.png",
     description: "Instagram reels series for cafe",
     images: [],
+    video:
+      "https://res.cloudinary.com/dbodkubbk/video/upload/v1765354596/svs_jrkkij.mp4",
     pdf: "",
     visible: true,
   },
@@ -66,6 +70,7 @@ export const projects = [
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765221295/Brand_Kit_bq1bvc.png",
     description: "Complete brand identity package",
     images: [],
+    video: "",
     pdf: "https://drive.google.com/file/d/1Jq5pPd4jmj-wOrI_q8zQte8BCiVabtmi/preview",
     visible: true,
   },

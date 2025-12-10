@@ -9,7 +9,9 @@ import { X } from "lucide-react";
 const PortfolioDetail = () => {
   const { id } = useParams();
   const project = projects.find((p) => p.id === Number(id));
+
   const [activeImage, setActiveImage] = useState(null);
+  const [activeVideo, setActiveVideo] = useState(null);
 
   if (!project) {
     return (
@@ -34,15 +36,38 @@ const PortfolioDetail = () => {
         <h1 className="text-4xl font-display font-bold">{project.title}</h1>
         <p className="text-muted-foreground mt-2">{project.description}</p>
 
-        {/* ✅ PDF SECTION */}
+        {/* ✅ SMALL CLEAN PDF BOX */}
         {project.pdf && (
-          <div className="mt-10 w-full h-[80vh] rounded-xl overflow-hidden border">
-            <iframe
-              src={project.pdf}
-              className="w-full h-full"
-              allow="autoplay"
-              title="Project PDF"
-            ></iframe>
+          <div className="mt-10 flex justify-center">
+            <div className="w-[340px] sm:w-[420px] h-[580px] rounded-xl overflow-hidden shadow-xl border bg-white">
+              <iframe
+                src={project.pdf}
+                className="w-full h-full"
+                allow="autoplay"
+                title="Project PDF"
+              ></iframe>
+            </div>
+          </div>
+        )}
+
+        {/* ✅ FIXED 9:16 VIDEO (Small size + Click popup) */}
+        {project.video && (
+          <div className="mt-12 flex flex-col items-center">
+            <h2 className="text-2xl font-display font-bold mb-4">
+              Project Video
+            </h2>
+
+            <div
+              className="aspect-[9/16] w-[300px] sm:w-[360px] rounded-xl overflow-hidden shadow-xl cursor-pointer"
+              onClick={() => setActiveVideo(project.video)}
+            >
+              <video
+                src={project.video}
+                className="w-full h-full object-cover"
+                muted
+                playsInline
+              />
+            </div>
           </div>
         )}
 
@@ -65,7 +90,7 @@ const PortfolioDetail = () => {
 
       <Footer />
 
-      {/* ✅ IMAGE MODAL */}
+      {/* ✅ IMAGE POPUP */}
       <AnimatePresence>
         {activeImage && (
           <motion.div
@@ -83,6 +108,34 @@ const PortfolioDetail = () => {
 
             <button
               onClick={() => setActiveImage(null)}
+              className="absolute top-6 right-6 bg-white rounded-full p-2"
+            >
+              <X />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* ✅ VIDEO POPUP */}
+      <AnimatePresence>
+        {activeVideo && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+            onClick={() => setActiveVideo(null)}
+          >
+            <motion.video
+              src={activeVideo}
+              controls
+              autoPlay
+              className="max-w-[450px] max-h-[90vh] rounded-xl shadow-xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+
+            <button
+              onClick={() => setActiveVideo(null)}
               className="absolute top-6 right-6 bg-white rounded-full p-2"
             >
               <X />
