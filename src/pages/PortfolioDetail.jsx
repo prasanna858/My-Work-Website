@@ -36,17 +36,22 @@ const PortfolioDetail = () => {
         <h1 className="text-4xl font-display font-bold">{project.title}</h1>
         <p className="text-muted-foreground mt-2">{project.description}</p>
 
-        {/* ✅ SMALL CLEAN PDF BOX */}
-        {project.pdf && (
-          <div className="mt-10 flex justify-center">
-            <div className="w-[340px] sm:w-[420px] h-[580px] rounded-xl overflow-hidden shadow-xl border bg-white">
-              <iframe
-                src={project.pdf}
-                className="w-full h-full"
-                allow="autoplay"
-                title="Project PDF"
-              ></iframe>
-            </div>
+        {/* ✅ SHOW MULTIPLE PDFs SIDE BY SIDE */}
+        {project.pdfs && project.pdfs.length > 0 && (
+          <div className="mt-12 flex flex-col lg:flex-row items-center justify-center gap-10">
+            {project.pdfs.map((pdfUrl, index) => (
+              <div
+                key={index}
+                className="w-[340px] sm:w-[420px] h-[580px] rounded-xl overflow-hidden shadow-xl border bg-white"
+              >
+                <iframe
+                  src={pdfUrl}
+                  className="w-full h-full"
+                  allow="autoplay"
+                  title={`Project PDF ${index + 1}`}
+                ></iframe>
+              </div>
+            ))}
           </div>
         )}
 

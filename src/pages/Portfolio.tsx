@@ -21,7 +21,10 @@ export const projects = [
     images: [
       "https://res.cloudinary.com/dbodkubbk/image/upload/v1765208378/Biryani_Menu_qhwbhu.png",
     ],
-    pdf: "https://drive.google.com/file/d/1aMRXvDV9kpmHO6pJZ1LSThp-mmxQ1ANA/preview",
+    pdfs: [
+      "https://drive.google.com/file/d/1aMRXvDV9kpmHO6pJZ1LSThp-mmxQ1ANA/preview",
+      "https://drive.google.com/file/d/1KCnwt3UsvDMiI8spkk8H5dO2GNH_4-6d/preview",
+    ],
     visible: true,
   },
 
