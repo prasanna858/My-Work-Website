@@ -146,15 +146,15 @@ export function Hero() {
             >
               {[
                 {
-                  value: "0",
+                  value: "15+",
                   label: "Projects Delivered",
                 },
                 {
-                  value: "0",
+                  value: "12+",
                   label: "Happy Restaurants",
                 },
                 {
-                  value: "*.*",
+                  value: "4.7/5",
                   label: "Client Rating",
                 },
               ].map((stat, index) => (
@@ -215,7 +215,7 @@ export function Hero() {
                   </div>
                   <div>
                     <p className="text-sm font-semibold">Menu Designs</p>
-                    <p className="text-xs text-muted-foreground">0 templates</p>
+                    <p className="text-xs text-muted-foreground">20+ templates</p>
                   </div>
                 </div>
               </motion.div>
