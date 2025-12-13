@@ -24,6 +24,7 @@ export const projects = [
     pdfs: [
       "https://drive.google.com/file/d/1aMRXvDV9kpmHO6pJZ1LSThp-mmxQ1ANA/preview",
       "https://drive.google.com/file/d/1KCnwt3UsvDMiI8spkk8H5dO2GNH_4-6d/preview",
+      "https://drive.google.com/file/d/1CJ1jMtkVQ2eJVkceqjRa6PlqAZIc8pm7/preview",
     ],
     visible: true,
   },
